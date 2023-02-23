@@ -24,10 +24,12 @@ def even():
   return (mole / 2)
 
 
-def magic(x):
+def magic_spike(x):
   #given a spike value, it will return the position that happens in
   return 2**x - 1
 
+def magic_decimal(x):
+  return ((math.log(x-1) / math.log(2))
 
 def odd():
   
@@ -35,7 +37,7 @@ def odd():
 
   # so there is a pattern where for odd numbers, there is a spike after 2x+1 where x is prev number.
   # spike at 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047
-  return magic(k)
+  #return magic(k)
 
 
 if __name__ == "__main__":
