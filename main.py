@@ -1,13 +1,23 @@
 mole = 602200000000000000000000
-k = 1000
+k = 79
 
-
+#There are 79 unique peaks in the number
 def main():
   sum = 0
-  #sum += even()
-  sum += odd()
+  sum += even()
+  sum += peaks()
+  
   print(sum)
+  print(mole)
   #print(f"sum: {sum}")
+
+
+def peaks():
+  temp = 0
+  for i in range(79):
+    temp+=i
+  return temp
+    
 
 
 def even():
