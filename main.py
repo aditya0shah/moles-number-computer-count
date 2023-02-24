@@ -1,5 +1,6 @@
 mole = 602200000000000000000000
 
+
 def main():
     sum = 0
     sum += even()
